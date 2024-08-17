@@ -1,6 +1,7 @@
 <script setup>
 import AppLayout from "../layouts/AppLayout.vue"
 import HeadingCard from "../components/HeadingCard.vue"
+import HeaderButton from "../components/HeaderButton.vue"
 // import { VueTyper } from 'vue-typer'
 import VueWriter from 'vue-writer'
 import { ref, onMounted, computed, onUnmounted } from 'vue'
@@ -32,24 +33,13 @@ onUnmounted (() =>  {
 
 <template>
   <h1 class="text-white z-40 fixed w-full h-[40px] font-mono">
-    <div class="grid grid-cols-7 bg-black animate-fade" v-if="navBarShow">
-
-
-      <div class="col-start-5 col-span-4">
-        <button class="mr-10 mt-2 mb-2 px-2 py-1 border rounded">About Me</button>
-        <button class="mr-10 mt-2 px-2 py-1 border rounded">Skills</button>
-        <button class="mr-10 mt-2 px-2 py-1 border rounded">Projects</button>
-        <button class="mr-10 mt-2 px-2 py-1 border rounded">Extras</button>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-7" v-else>
+    <div class="grid grid-cols-7 bg-black animate-fade" >
 
       <div class="col-start-5 col-span-4">
-        <button class="mr-10 mt-2 px-2 py-1 border rounded">About Me</button>
-        <button class="mr-10 mt-2 px-2 py-1 border rounded">Skills</button>
-        <button class="mr-10 mt-2 px-2 py-1 border rounded">Projects</button>
-        <button class="mr-10 mt-2 px-2 py-1 border rounded">Extras</button>
+        <HeaderButton>About Me</HeaderButton>
+        <HeaderButton>Skills</HeaderButton>
+        <HeaderButton>Projects Me</HeaderButton>
+        <HeaderButton>Extras</HeaderButton>
       </div>
     </div>
 
@@ -64,14 +54,14 @@ onUnmounted (() =>  {
 <!--  </div>-->
   <!--  <VueWriter :array="['Hello World', 'My name is Matt']"  :typeSpeed="40" :eraseSpeed="50" :delay="1000" :intervals="200"/>-->
 
-  <div class="section">
+  <div class="section bg-black">
 
 
 
     <div>
 
     </div>
-    <h1 class="text-white pl-10 pt-60">
+    <h1 class="text-white pl-10 pt-60 ">
       <div>
         Matt Curschman
       </div>
@@ -142,6 +132,9 @@ onUnmounted (() =>  {
         </SkillCard>
         <SkillCard title="Programming Languages">
           <div class="grid grid-cols-3">
+            <SkillImage image="/cimage.png"/>
+            <SkillImage image="/cppimage.png" class="w-[100]"/>
+
 
           </div>
         </SkillCard>

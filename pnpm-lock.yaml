@@ -1,6 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
+  '@heroicons/vue':
+    specifier: ^2.1.5
+    version: 2.1.5(vue@3.3.4)
   typed.js:
     specifier: ^2.0.16
     version: 2.0.16
@@ -946,6 +953,14 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@heroicons/vue@2.1.5(vue@3.3.4):
+    resolution: {integrity: sha512-IpqR72sFqFs55kyKfFS7tN+Ww6odFNeH/7UxycIOrlVYfj4WUGAdzQtLBnJspucSeqWFQsKM0g0YrgU655BEfA==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.3.4
+    dev: false
 
   /@ioredis/commands@1.2.0:
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==}
@@ -6503,7 +6518,7 @@ packages:
   /vue-typed-js@0.1.2:
     resolution: {integrity: sha512-9kDGuz17uYJghe/1hepRWiWYssgUFtrKnMGPHlWjVRxdvs/d9xYYWMkgzztjhx1R1B33hXkN8ctmkzCYHQ+caA==}
     dependencies:
-      typed.js: github.com/mattboldt/typed.js/cd02e533c772e35ad60ee48656b33e610eadaca7
+      typed.js: github.com/mattboldt/typed.js/f0759c1dc054a2d6743862d5331f03e49f9845d7
     dev: false
 
   /vue-typer@1.2.0:
@@ -6675,12 +6690,8 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  github.com/mattboldt/typed.js/cd02e533c772e35ad60ee48656b33e610eadaca7:
-    resolution: {tarball: https://codeload.github.com/mattboldt/typed.js/tar.gz/cd02e533c772e35ad60ee48656b33e610eadaca7}
+  github.com/mattboldt/typed.js/f0759c1dc054a2d6743862d5331f03e49f9845d7:
+    resolution: {tarball: https://codeload.github.com/mattboldt/typed.js/tar.gz/f0759c1dc054a2d6743862d5331f03e49f9845d7}
     name: typed.js
-    version: 2.0.16
+    version: 2.1.0
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

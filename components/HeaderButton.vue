@@ -1,7 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ArrowDownTrayIcon } from '@heroicons/vue/24/outline'
+</script>
 
 <template>
-    <button class="mr-10 mt-2 mb-2 px-2 py-1 border rounded"><slot></slot></button>
+        <button class=" mt-2 mb-2 px-2 py-1 border rounded">
+            <slot></slot>
+        
+        </button>
 </template>
 
 <style scoped></style>

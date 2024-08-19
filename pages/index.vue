@@ -2,6 +2,7 @@
 import AppLayout from "../layouts/AppLayout.vue"
 import HeadingCard from "../components/HeadingCard.vue"
 import HeaderButton from "../components/HeaderButton.vue"
+import { ArrowDownTrayIcon } from '@heroicons/vue/24/outline'
 // import { VueTyper } from 'vue-typer'
 import VueWriter from 'vue-writer'
 import { ref, onMounted, computed, onUnmounted } from 'vue'
@@ -32,34 +33,29 @@ onUnmounted (() =>  {
 
 
 <template>
-  <h1 class="text-white z-40 fixed w-full h-[40px] font-mono">
-    <div class="grid grid-cols-7 bg-black animate-fade" >
-
-      <div class="col-start-5 col-span-4">
+  <h1 class="text-white z-40 fixed w-full h-[50px] font-mono bg-black">
+    <div class="absolute right-20">
+      <div class="flex space-x-4">
         <HeaderButton>About Me</HeaderButton>
         <HeaderButton>Skills</HeaderButton>
         <HeaderButton>Projects Me</HeaderButton>
         <HeaderButton>Extras</HeaderButton>
+        <a href="/MatthewCurschmanResume.pdf" download target="blank">
+          <HeaderButton class="bg-white text-black flex items-center space-x-2">
+          Resume
+        <ArrowDownTrayIcon class="h-5 w-5 text-black-500" />
+        </HeaderButton>
+        </a>
+        
       </div>
     </div>
 
+      
+
   </h1>
 
-<!--  <h1>Hello there</h1>-->
-
-<!--  <div class="  >-->
-<!--    <video  autoplay loop muted >-->
-<!--      <source src="/background.mp4" type="video/mp4">-->
-<!--    </video>-->
-<!--  </div>-->
-  <!--  <VueWriter :array="['Hello World', 'My name is Matt']"  :typeSpeed="40" :eraseSpeed="50" :delay="1000" :intervals="200"/>-->
-
   <div class="section bg-black">
-
-
-
     <div>
-
     </div>
     <h1 class="text-white pl-10 pt-60 ">
       <div>
@@ -81,7 +77,6 @@ onUnmounted (() =>  {
         <source src="/background.mp4" type="video/mp4">
       </video>
     </div>
-
   </div>
 
   <Section text="About Me" textColor="text-white" color="bg-[#111]" class="h-[700px]">
@@ -98,11 +93,11 @@ onUnmounted (() =>  {
         in a database, where it can then be accessed as an API backend, queried for further information, or have
         subsequent operations ran on it (Conflux Parser).
 
-        My current side project is a lexicographic parser designed to parse and read mathematical equations and provide
-        their derivative (derivApp).
+        My current side projects are a  lexicographic parser designed to parse and read mathematical equations and provide
+        their derivative (derivApp), and a personal tracker (Myday)
 
         My friends describe me as funny, and I like to describe myself as determined. I am an Eagle Scout, have a
-        Black Belt in Karate, and enjoy playing piano and art as my hobbies. My favorite subjects are
+        Black Belt in Karate, and enjoy both piano and art as my hobbies. My favorite subjects are
         Computer Science (duh), Math, and Art.
       </pre>
     </div>
@@ -110,7 +105,6 @@ onUnmounted (() =>  {
 
   <Section text="Skills" textColor="text-black" color="bg-white" class="h-[800px] mx-auto pb-20">
 
-    <img class="h-40 w-40" src="/cppimage.png" alt="">
 
 
     <div class="mx-auto text-center pt-20">
@@ -126,17 +120,26 @@ onUnmounted (() =>  {
         </SkillCard>
         <SkillCard title="Back End">
           <div class="grid grid-cols-3">
+            <SkillImage  image="/php.svg" />
+
 
           </div>
         </SkillCard>
         <SkillCard title="Frameworks">
           <div class="grid grid-cols-3">
+            <SkillImage  image="/nuxt.png" />
+
 
           </div>
         </SkillCard>
         <SkillCard title="Programming Languages">
           <div class="grid grid-cols-3">
             <SkillImage  image="/cppimage.png" />
+            <SkillImage  image="/java.svg" />
+            <SkillImage  image="/js.webp" />
+
+
+
 
 
 
@@ -144,11 +147,17 @@ onUnmounted (() =>  {
         </SkillCard>
         <SkillCard title="Version Control">
           <div class="grid grid-cols-3">
+            <SkillImage  image="/gitlab.png" />
+            <SkillImage  image="/github.png" />
+
+
 
           </div>
         </SkillCard>
         <SkillCard title="Databases">
           <div class="grid grid-cols-3">
+            <SkillImage  image="/sql.png" />
+
 
           </div>
         </SkillCard>
@@ -164,6 +173,10 @@ onUnmounted (() =>  {
         </SkillCard>
         <SkillCard title="Operating Systems">
           <div class="grid grid-cols-3">
+            <SkillImage  image="/macos.png" />
+            <SkillImage  image="/windows.webp" />
+            <SkillImage  image="/linux.png" />
+
 
           </div>
         </SkillCard>

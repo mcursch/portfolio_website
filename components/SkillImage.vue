@@ -5,5 +5,8 @@ const props = defineProps({
 
 </script>
 <template>
-  <img class="rounded-full h-20 w-20" :src="props.image" alt="">
+  <div>
+    <img class="rounded-full " :src="props.image" alt="">
+
+  </div>
 </template>

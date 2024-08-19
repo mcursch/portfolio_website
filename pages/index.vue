@@ -109,6 +109,10 @@ onUnmounted (() =>  {
   </Section>
 
   <Section text="Skills" textColor="text-black" color="bg-white" class="h-[800px] mx-auto pb-20">
+
+    <img class="h-40 w-40" src="/cppimage.png" alt="">
+
+
     <div class="mx-auto text-center pt-20">
       <div class="grid grid-cols-3 px-40 gap-5 pb-10" >
         <SkillCard title="Front End">
@@ -132,8 +136,8 @@ onUnmounted (() =>  {
         </SkillCard>
         <SkillCard title="Programming Languages">
           <div class="grid grid-cols-3">
-            <SkillImage image="/cimage.png"/>
-            <SkillImage image="/cppimage.png" class="w-[100]"/>
+            <SkillImage  image="/cppimage.png" />
+
 
 
           </div>

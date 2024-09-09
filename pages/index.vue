@@ -104,60 +104,50 @@ onUnmounted (() =>  {
   </Section>
 
   <Section text="Skills" textColor="text-black" color="bg-white" class="h-[800px] mx-auto pb-20">
-
-
-
     <div class="mx-auto text-center pt-20">
       <div class="grid grid-cols-3 px-40 gap-5 pb-10" >
         <SkillCard title="Front End">
           <div class="grid grid-cols-3">
-            <SkillImage image="/html.png"/>
-            <SkillImage image="/css.png"/>
-            <SkillImage image="/tailwind.png"/>
-
-
+            <SkillImage image="/html.png" name="HTML"/>
+            <SkillImage image="/css.png" name="CSS"/>
+            <SkillImage image="/tailwind.png" name="Tailwind"/>
           </div>
         </SkillCard>
         <SkillCard title="Back End">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/php.svg" />
+            <SkillImage  image="/php.svg" name="PHP"/>
 
 
           </div>
         </SkillCard>
         <SkillCard title="Frameworks">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/nuxt.png" />
-
-
+            <SkillImage  image="/nuxt.png" name="NuxtJS"/>
+            <SkillImage  image="/vue.webp" name="VueJS"/>
           </div>
         </SkillCard>
         <SkillCard title="Programming Languages">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/cppimage.png" />
-            <SkillImage  image="/java.svg" />
-            <SkillImage  image="/js.webp" />
-
-
-
-
-
-
+            <SkillImage  image="/cppimage.png" name="C++" />
+            <SkillImage  image="/java.svg" name="Java"/>
+            <SkillImage  image="/js.webp" name="JavaScript"/>
+            <SkillImage  image="/csharp.png" name="C#"/>
+            <SkillImage  image="/cimage.png" name="C" />
+            <SkillImage  image="/python.png" name="Python"/>
           </div>
         </SkillCard>
         <SkillCard title="Version Control">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/gitlab.png" />
-            <SkillImage  image="/github.png" />
-
-
-
+            <SkillImage  image="/gitlab.png" name="GitLab"/>
+            <SkillImage  image="/github.png" name="GitHub"/>
           </div>
         </SkillCard>
         <SkillCard title="Databases">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/sql.png" />
-
+            <SkillImage  image="/sql.png" name="SQL"/>
+            <SkillImage  image="/mongo.png" name="MongoDB"/>
+            <SkillImage  image="/maria.png" name="MariaDB"/>
+            <SkillImage  image="/supabase.png" name="Supabase"/>
 
           </div>
         </SkillCard>
@@ -173,20 +163,23 @@ onUnmounted (() =>  {
         </SkillCard>
         <SkillCard title="Operating Systems">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/macos.png" />
-            <SkillImage  image="/windows.webp" />
-            <SkillImage  image="/linux.png" />
-
-
+            <SkillImage  image="/macos.png" name="MacOS"/>
+            <SkillImage  image="/windows.webp" name="Windows"/>
+            <SkillImage  image="/linux.png" name="Linux"/>
           </div>
         </SkillCard>
-
       </div>
     </div>
   </Section>
 
   <Section text="Projects" textColor="text-white" color="bg-[#111]" class="h-[700px]">
-    Hello World
+    Deri 
+    An app that uses Java and lexical analysis to tokenize and parse characters, rendering the derivative of mathematical equations
+
+    MyDay
+    A self improvement app that offers several features such as daily life tracking, exercise tracking, calendar planning, and more
+
+    
   </Section>
 
 

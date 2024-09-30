@@ -108,7 +108,7 @@ onUnmounted (() =>  {
       <div class="grid grid-cols-3 px-40 gap-5 pb-10" >
         <SkillCard title="Front End">
           <div class="grid grid-cols-3">
-            <SkillImage image="/html.png" name="HTML"/>
+            <SkillImage image="html.png" name="HTML"/>
             <SkillImage image="/css.png" name="CSS"/>
             <SkillImage image="/tailwind.png" name="Tailwind"/>
           </div>

@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-  router: {
-    base: '/portfolio_website'
+  app: {
+    baseURL: '/portfolio_website/',
+    buildAssetsDir: 'assets',
   },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],

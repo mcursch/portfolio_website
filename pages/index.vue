@@ -109,45 +109,45 @@ onUnmounted (() =>  {
         <SkillCard title="Front End">
           <div class="grid grid-cols-3">
             <SkillImage image="html.png" name="HTML"/>
-            <SkillImage image="/css.png" name="CSS"/>
-            <SkillImage image="/tailwind.png" name="Tailwind"/>
+            <SkillImage image="css.png" name="CSS"/>
+            <SkillImage image="tailwind.png" name="Tailwind"/>
           </div>
         </SkillCard>
         <SkillCard title="Back End">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/php.svg" name="PHP"/>
+            <SkillImage  image="php.svg" name="PHP"/>
 
 
           </div>
         </SkillCard>
         <SkillCard title="Frameworks">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/nuxt.png" name="NuxtJS"/>
-            <SkillImage  image="/vue.webp" name="VueJS"/>
+            <SkillImage  image="nuxt.png" name="NuxtJS"/>
+            <SkillImage  image="vue.webp" name="VueJS"/>
           </div>
         </SkillCard>
         <SkillCard title="Programming Languages">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/cppimage.png" name="C++" />
-            <SkillImage  image="/java.svg" name="Java"/>
-            <SkillImage  image="/js.webp" name="JavaScript"/>
-            <SkillImage  image="/csharp.png" name="C#"/>
-            <SkillImage  image="/cimage.png" name="C" />
-            <SkillImage  image="/python.png" name="Python"/>
+            <SkillImage  image="cppimage.png" name="C++" />
+            <SkillImage  image="java.svg" name="Java"/>
+            <SkillImage  image="js.webp" name="JavaScript"/>
+            <SkillImage  image="csharp.png" name="C#"/>
+            <SkillImage  image="cimage.png" name="C" />
+            <SkillImage  image="python.png" name="Python"/>
           </div>
         </SkillCard>
         <SkillCard title="Version Control">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/gitlab.png" name="GitLab"/>
-            <SkillImage  image="/github.png" name="GitHub"/>
+            <SkillImage  image="gitlab.png" name="GitLab"/>
+            <SkillImage  image="github.png" name="GitHub"/>
           </div>
         </SkillCard>
         <SkillCard title="Databases">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/sql.png" name="SQL"/>
-            <SkillImage  image="/mongo.png" name="MongoDB"/>
-            <SkillImage  image="/maria.png" name="MariaDB"/>
-            <SkillImage  image="/supabase.png" name="Supabase"/>
+            <SkillImage  image="sql.png" name="SQL"/>
+            <SkillImage  image="mongo.png" name="MongoDB"/>
+            <SkillImage  image="maria.png" name="MariaDB"/>
+            <SkillImage  image="supabase.png" name="Supabase"/>
 
           </div>
         </SkillCard>
@@ -163,9 +163,9 @@ onUnmounted (() =>  {
         </SkillCard>
         <SkillCard title="Operating Systems">
           <div class="grid grid-cols-3">
-            <SkillImage  image="/macos.png" name="MacOS"/>
-            <SkillImage  image="/windows.webp" name="Windows"/>
-            <SkillImage  image="/linux.png" name="Linux"/>
+            <SkillImage  image="macos.png" name="MacOS"/>
+            <SkillImage  image="windows.webp" name="Windows"/>
+            <SkillImage  image="linux.png" name="Linux"/>
           </div>
         </SkillCard>
       </div>

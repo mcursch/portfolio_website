@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const text = ref("")
+const text = ref("hello world")
 const textLoad = () => {
   setTimeout(() => {
     text.value = " Computer Engineer";

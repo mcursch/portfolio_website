@@ -65,10 +65,13 @@ onUnmounted (() =>  {
       </div>
       <div class="pl-20 ">
         <div class="flex flex-row">
-          <div class="pr-7">I am a </div>
+          <div class="pr-7">I am a very cool </div>
           <div>
-            <VueWriter class="inline text-blue-300" :array="['Computer Engineer', 'Computer Scientist', 'Web Developer']"  :typeSpeed="40" :eraseSpeed="50" :delay="1000" :intervals="200"/>
+            <TypingComponent/>
           </div>
+          <!-- <div>
+            <VueWriter class="inline text-blue-300" :array="['Computer Engineer', 'Computer Scientist', 'Web Developer']"  :typeSpeed="40" :eraseSpeed="50" :delay="1000" :intervals="200"/>
+          </div> -->
         </div>
       </div>
     </h1>

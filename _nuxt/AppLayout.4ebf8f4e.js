@@ -1,0 +1,1 @@
+import{_ as s}from"./_plugin-vue_export-helper.c27b6911.js";import{k as o,l as t,F as r,j as a}from"./entry.3933b40e.js";const c={},n={class:"bg-black h-screen"};function l(e,_){return a(),o("div",n,[t("div",null,[r(e.$slots,"default")])])}const i=s(c,[["render",l]]);export{i as default};

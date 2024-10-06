@@ -4,8 +4,8 @@ import HeadingCard from "../components/HeadingCard.vue"
 import HeaderButton from "../components/HeaderButton.vue"
 import ProfilePicture from "~/components/ProfilePicture.vue"
 import { ArrowDownTrayIcon } from '@heroicons/vue/24/outline'
-// import { VueTyper } from 'vue-typer'
 import VueWriter from 'vue-writer'
+import TypingComponent from "../components/TypingComponent.vue"
 import { ref, onMounted, computed, onUnmounted } from 'vue'
 const attrArray = ["Education", "Notable Projects", "Github", "Resume"]
 // import Typed from 'typed.js';
@@ -29,11 +29,12 @@ onUnmounted (() =>  {
   window.removeEventListener('scroll', handleScroll)
 })
 
-
 </script>
 
 
 <template>
+  
+
   <h1 class="text-white z-40 fixed w-full h-[50px] font-mono bg-black">
     <div class="absolute right-20">
       <div class="flex space-x-4">
@@ -73,11 +74,6 @@ onUnmounted (() =>  {
     </h1>
     <h1>
     </h1>
-    <!-- <div class="video-container">
-      <video autoplay loop muted class="md:filter-none">
-        <source src="/background.mp4" type="video/mp4">
-      </video>
-    </div> -->
   </div>
 
   <Section text="About Me" textColor="text-white" color="bg-[#111]" class="h-[700px]">

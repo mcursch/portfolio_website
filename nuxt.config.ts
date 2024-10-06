@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
-  app: {
-    baseURL: '/portfolio_website/',
-    buildAssetsDir: 'assets',
-  },
+  target: 'static',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   postcss: {

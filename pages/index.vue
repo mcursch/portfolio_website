@@ -2,6 +2,7 @@
 import AppLayout from "../layouts/AppLayout.vue"
 import HeadingCard from "../components/HeadingCard.vue"
 import HeaderButton from "../components/HeaderButton.vue"
+import ProfilePicture from "~/components/ProfilePicture.vue"
 import { ArrowDownTrayIcon } from '@heroicons/vue/24/outline'
 // import { VueTyper } from 'vue-typer'
 import VueWriter from 'vue-writer'
@@ -72,16 +73,19 @@ onUnmounted (() =>  {
     </h1>
     <h1>
     </h1>
-    <div class="video-container">
+    <!-- <div class="video-container">
       <video autoplay loop muted class="md:filter-none">
         <source src="/background.mp4" type="video/mp4">
       </video>
-    </div>
+    </div> -->
   </div>
 
   <Section text="About Me" textColor="text-white" color="bg-[#111]" class="h-[700px]">
     <div class="flex flex-row">
-      <img class="rounded-full pt-10" src="/picture.png" alt="">
+      <div class="shrink-0">
+        <ProfilePicture image="picture.png" name="myself"/>
+      </div>
+
       <pre class="text-lg">
         My name is Matthew Curschman
 

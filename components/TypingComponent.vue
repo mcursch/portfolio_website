@@ -28,9 +28,7 @@ setInterval(textLoad, 12000)
 <style scoped>
 
 
-.typingcontainer {
 
-}
 
 .typingcontainer .typingtext{
   position: relative;

@@ -1,6 +1,6 @@
 {
-  "date": "2024-10-06T23:31:02.762Z",
-  "preset": "static",
+  "date": "2024-10-06T23:41:10.808Z",
+  "preset": "nitro-prerender",
   "framework": {
     "name": "nitro",
     "version": "2.9.7"

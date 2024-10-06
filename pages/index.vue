@@ -33,7 +33,7 @@ onUnmounted (() =>  {
 
 
 <template>
-  
+
 
   <h1 class="text-white z-40 fixed w-full h-[50px] font-mono bg-black">
     <div class="absolute right-20">
@@ -65,10 +65,8 @@ onUnmounted (() =>  {
       </div>
       <div class="pl-20 ">
         <div class="flex flex-row">
-          <div class="pr-7">I am a very cool </div>
-          <div class="bg-blue-200 shrink-0 h-20 w-20">
+          <div class="pr-7">I am a </div>
             <TypingComponent/>
-          </div>
           <!-- <div>
             <VueWriter class="inline text-blue-300" :array="['Computer Engineer', 'Computer Scientist', 'Web Developer']"  :typeSpeed="40" :eraseSpeed="50" :delay="1000" :intervals="200"/>
           </div> -->
@@ -86,6 +84,11 @@ onUnmounted (() =>  {
       </div>
 
       <pre class="text-lg">
+
+        <div id="testText">
+          Typewriter CSS
+
+        </div>
         My name is Matthew Curschman
 
         I have a degree in Computer Engineering from the University of Florida. Go Gators!
@@ -174,40 +177,12 @@ onUnmounted (() =>  {
       </div>
     </div>
   </Section>
-
   <Section text="Projects" textColor="text-white" color="bg-[#111]" class="h-[700px]">
     Deri 
     An app that uses Java and lexical analysis to tokenize and parse characters, rendering the derivative of mathematical equations
-
     MyDay
     A self improvement app that offers several features such as daily life tracking, exercise tracking, calendar planning, and more
-
-    
   </Section>
-
-
-<!--  <AppLayout>-->
-<!--    <div >-->
-<!--&lt;!&ndash;      <div class="text-white flex items-center justify-center pt-12">&ndash;&gt;-->
-<!--&lt;!&ndash;        Matthew Curschman&ndash;&gt;-->
-<!--&lt;!&ndash;      </div>&ndash;&gt;-->
-<!--&lt;!&ndash;      <div class="text-white flex items-center justify-center pt-4">&ndash;&gt;-->
-<!--&lt;!&ndash;        Computer Engineer&ndash;&gt;-->
-<!--&lt;!&ndash;      </div>&ndash;&gt;-->
-<!--      <TitleCard></TitleCard>-->
-<!--      <Section color="bg-white" text="About Me">-->
-<!--        My name is Matthew Curschman and I am a Computer Engineer.-->
-<!--      </Section>-->
-<!--      <Section color="bg-[#111]" textColor="text-white" text="Experience">-->
-<!--        I currently work at conference catalysts-->
-<!--      </Section>-->
-
-
-
-
-<!--      </div>-->
-
-<!--  </AppLayout>-->
 </template>
 
 
@@ -220,8 +195,6 @@ onUnmounted (() =>  {
   height: 100vh;
   display: flex;
   overflow: hidden;
-
-
 }
 
 .section h1 {
@@ -242,6 +215,32 @@ onUnmounted (() =>  {
 @keyframes fade {
   0% { opacity: 0;}
   100% { opacity: 1}
+}
+
+.typingcontainer {
+  
+}
+
+
+/* 
+#testText:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-left: 2px solid #4070F4;
+  animation: animate 4s steps(5) infinite;
+} */
+@keyframes animate {
+  40%, 60% {
+    left: 100%
+  }
+  100% {
+    left: 0%
+  }
 }
 
 

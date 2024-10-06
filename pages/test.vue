@@ -16,16 +16,20 @@ setInterval(textLoad, 12000)
 </script>
 
 <template>
-  <div class="typingbody">
-    <div class="typingcontainer">
+      <span class="typingtext typingfirsttext">I am a</span> 
       <span class="typingtext typingsecondtext">{{ text }}</span> 
-    </div>
-
-  </div>
   
 </template>
 
 <style scoped>
+.typingbody {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #010718;
+  overflow: hidden;
+}
 
 .typingcontainer{
 
@@ -34,7 +38,7 @@ setInterval(textLoad, 12000)
 .typingcontainer .typingtext{
   position: relative;
   color: #4070F4;
-  font-size: 70px;
+  font-size: 30px;
   font-weight:600;
 }
 
@@ -50,7 +54,7 @@ setInterval(textLoad, 12000)
   height: 100%;
   width: 100%;
   background-color: #010718;
-  border-left: 2px solid white;
+  border-left: 2px solid #4070F4;
   animation: animate 4s steps(12) infinite;
 }
 @keyframes animate{

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const text = ref("hello world")
+const text = ref("")
 const textLoad = () => {
   setTimeout(() => {
     text.value = " Computer Engineer";
@@ -27,7 +27,8 @@ setInterval(textLoad, 12000)
 
 <style scoped>
 
-.typingcontainer{
+
+.typingcontainer {
 
 }
 
@@ -58,7 +59,7 @@ setInterval(textLoad, 12000)
     left: 100%;
   }
   100% {
-    left:0%
+    left:0%;
   }
 }
 </style>

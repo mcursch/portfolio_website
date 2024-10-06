@@ -4,8 +4,7 @@ import HeadingCard from "../components/HeadingCard.vue"
 import HeaderButton from "../components/HeaderButton.vue"
 import ProfilePicture from "~/components/ProfilePicture.vue"
 import { ArrowDownTrayIcon } from '@heroicons/vue/24/outline'
-import VueWriter from 'vue-writer'
-import TypingComponent from "../components/TypingComponent.vue"
+import TypingComponent from "~/components/TypingComponent.vue"
 import { ref, onMounted, computed, onUnmounted } from 'vue'
 const attrArray = ["Education", "Notable Projects", "Github", "Resume"]
 // import Typed from 'typed.js';
@@ -20,7 +19,6 @@ let navBarShow = ref(false)
 function handleScroll () {
   windowPos = window.scrollY
   navBarShow.value = window.scrollY > 400;
-  console.log(navBarShow.value)
 }
 onMounted(() =>{
   window.addEventListener('scroll', handleScroll)
@@ -215,10 +213,6 @@ onUnmounted (() =>  {
 @keyframes fade {
   0% { opacity: 0;}
   100% { opacity: 1}
-}
-
-.typingcontainer {
-  
 }
 
 

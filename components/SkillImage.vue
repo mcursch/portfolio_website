@@ -4,7 +4,6 @@ const props = defineProps({
   name: String
 })
 const testImage = props.image
-console.log(testImage)
 
 </script>
 <template>

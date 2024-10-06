@@ -66,7 +66,7 @@ onUnmounted (() =>  {
       <div class="pl-20 ">
         <div class="flex flex-row">
           <div class="pr-7">I am a very cool </div>
-          <div class="bg-blue shrink-0 h-20 w-20">
+          <div class="bg-blue-200 shrink-0 h-20 w-20">
             <TypingComponent/>
           </div>
           <!-- <div>

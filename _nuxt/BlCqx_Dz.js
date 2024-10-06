@@ -1,0 +1,1 @@
+import{_ as s}from"./DlAUqK2U.js";import{v as t,x as o,J as r,t as a}from"./V_3lapZ9.js";const c={},n={class:"bg-black h-screen"};function l(e,_){return a(),t("div",n,[o("div",null,[r(e.$slots,"default")])])}const i=s(c,[["render",l]]);export{i as default};
